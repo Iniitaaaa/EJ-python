@@ -46,10 +46,10 @@ def eliminar_produc():
   print("El producto ha sido eliminado")
  return
 
-def ver_stock():
+def ver_stock(critico):
  
  for cod, producto in productos.items():
-        if producto['stock'] < 2:
-            print(f"Código: {cod}, Nombre: {producto['nombre']}, Stock: {producto['stock']}")
+        if producto['Cantidad'] < critico:
+            print(f"Codigo: {cod}, Producto: {producto['Producto']}, Cantidad: {producto['Cantidad']}")
 
 
